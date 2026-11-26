@@ -40,7 +40,7 @@ const blocks = [
     wrap: "flex justify-center",
     img: "w-full max-w-[17rem] h-auto",
     fallback: "w-full max-w-[17rem] aspect-[3/4]",
-    text: undefined as string[] | undefined,
+    text: site.group.description,
   },
   {
     title: "Sobre a exposição",

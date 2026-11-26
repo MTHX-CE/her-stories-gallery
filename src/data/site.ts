@@ -13,4 +13,10 @@ export const site = {
       "O filme destaca a importância da igualdade, do respeito e da valorização das mulheres na ciência.",
     ],
   },
+  group: {
+    description: [
+      "Nosso grupo fez um cartaz inspirado no filme Estrelas Além do Tempo, mostrando a importância das mulheres negras em diversas áreas de trabalho, como ciência, tecnologia e educação. O objetivo foi destacar suas conquistas, sua inteligência e a luta contra o racismo e o preconceito.",
+      "Também criamos um site com um resumo do filme e informações sobre o tema, reforçando a importância do respeito, da igualdade e da representatividade.",
+    ],
+  },
 };
