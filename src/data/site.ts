@@ -19,4 +19,10 @@ export const site = {
       "Também criamos um site com um resumo do filme e informações sobre o tema, reforçando a importância do respeito, da igualdade e da representatividade.",
     ],
   },
+  exhibition: {
+    description: [
+      "A exposição reúne cinco trajetórias marcantes.",
+      "Cada grupo apresenta uma personalidade em cinco seções – biografia, principais conquistas, contribuições e impacto, cordel e galeria são",
+    ],
+  },
 };
