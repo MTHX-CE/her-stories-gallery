@@ -7,4 +7,10 @@ export const site = {
   academicSummary: undefined as string | undefined,
   curatorialNote:
     "Os conteúdos estão em processo de curadoria. Nenhum texto, data ou imagem é publicado sem fonte verificada.",
+  film: {
+    description: [
+      "O filme conta a história de três mulheres negras que trabalhavam na NASA, nos Estados Unidos, durante a década de 1960. Mesmo sendo muito inteligentes e talentosas, elas enfrentavam o racismo e a desigualdade. Katherine, Dorothy e Mary lutaram para conquistar seu espaço e mostrar sua capacidade.",
+      "O filme destaca a importância da igualdade, do respeito e da valorização das mulheres na ciência.",
+    ],
+  },
 };

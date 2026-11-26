@@ -31,6 +31,7 @@ const blocks = [
     wrap: "",
     img: "w-full h-auto aspect-[3/2] object-cover",
     fallback: "w-full aspect-[3/2]",
+    text: site.film.description,
   },
   {
     title: "Sobre o grupo",
@@ -39,6 +40,7 @@ const blocks = [
     wrap: "flex justify-center",
     img: "w-full max-w-[17rem] h-auto",
     fallback: "w-full max-w-[17rem] aspect-[3/4]",
+    text: undefined as string[] | undefined,
   },
   {
     title: "Sobre a exposição",
@@ -47,6 +49,7 @@ const blocks = [
     wrap: "flex justify-center",
     img: "w-full max-w-[8rem] md:max-w-[10rem] h-auto",
     fallback: "w-full max-w-[10rem] aspect-[2/3]",
+    text: undefined as string[] | undefined,
   },
 ];
 
@@ -146,7 +149,15 @@ function Index() {
                   fallbackClassName={bl.fallback}
                 />
               </div>
-              <p className="font-display text-2xl md:text-4xl leading-snug text-paper text-center">Informações a serem inseridas</p>
+              {bl.text?.length ? (
+                <div className="space-y-5">
+                  {bl.text.map((p, i) => (
+                    <p key={i} className="text-lg md:text-xl leading-relaxed text-paper/90">{p}</p>
+                  ))}
+                </div>
+              ) : (
+                <p className="font-display text-2xl md:text-4xl leading-snug text-paper text-center">Informações a serem inseridas</p>
+              )}
             </div>
           </div>
         ))}
