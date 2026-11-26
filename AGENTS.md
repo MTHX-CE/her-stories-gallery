@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Architecture
+
+- Keep exhibition content in `src/data/site.ts` and `src/data/women.ts` as the single source of truth rendered by `/`, `/galeria`, and `/mulheres/$slug`, so profile sections and asset pointers stay consistent across routes.

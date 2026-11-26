@@ -1,0 +1,104 @@
+{
+  "source": "code-archive",
+  "artifact": "mulheres-negras-historias-que-transformam-main.zip",
+  "capabilities": [
+    {
+      "capability": "code",
+      "source": "TanStack Start v1 React exhibition app (/, /galeria, /mulheres/$slug), custom oklch theme, expo components, and Vitest suite",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "schema",
+      "source": "None detected (static editorial exhibition)",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "records",
+      "source": "Bundled TypeScript content modules (src/data/site.ts, src/data/women.ts) for 5 exhibition profiles",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "auth_identities",
+      "source": "None detected",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "authorization",
+      "source": "None detected",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "uploaded_file_bytes",
+      "source": "10 .asset.json metadata pointers in src/assets/ (9 referenced: 4 home photos, 5 portraits; 1 unused porta.jpg) pointing to project 920fd520-b105-4b9e-8024-1efe9d104874 without binary files",
+      "outcome": "migrate",
+      "status": "pending",
+      "next_action": "Preserve .asset.json metadata pointers with graceful UI fallbacks and request the 9 original JPEG image files from the user to upload to this project."
+    },
+    {
+      "capability": "external_providers",
+      "source": "Google Fonts (Archivo and Fraunces) loaded in root head",
+      "outcome": "preserve",
+      "status": "verified",
+      "next_action": "None"
+    },
+    {
+      "capability": "public_endpoints",
+      "source": "None detected",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "callbacks",
+      "source": "None detected",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "webhooks",
+      "source": "None detected",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "schedules",
+      "source": "None detected",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "secrets",
+      "source": "None detected",
+      "outcome": "none",
+      "status": "not_applicable",
+      "next_action": "None"
+    },
+    {
+      "capability": "cutover",
+      "source": "Static web app without custom backend or webhook endpoints",
+      "outcome": "preserve",
+      "status": "pending",
+      "next_action": "Upload the 9 missing image files before publishing."
+    },
+    {
+      "capability": "verification",
+      "source": "Build, Vitest unit tests, and Playwright verification of /, /galeria, and /mulheres/$slug",
+      "outcome": "verify",
+      "status": "partial",
+      "next_action": "Re-verify image rendering after the 9 missing JPEG files are uploaded."
+    }
+  ]
+}
