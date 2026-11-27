@@ -1,4 +1,10 @@
 export const site = {
+  images: {
+    group: "/images/home/cinco-mulheres.jpg",
+    film: "/images/home/filme.jpg",
+    poster: null,
+    door: "/images/home/porta-isolada.jpg",
+  },
   title: "Mulheres Negras",
   subtitle: "Histórias que Transformam",
   tagline: "Uma exposição digital sobre cinco mulheres negras.",

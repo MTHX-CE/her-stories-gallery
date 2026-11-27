@@ -31,4 +31,6 @@ use the editor.
 
 ## Architecture
 
-- Keep exhibition content in `src/data/site.ts` and `src/data/women.ts` as the single source of truth rendered by `/`, `/galeria`, and `/mulheres/$slug`, so profile sections and asset pointers stay consistent across routes.
+- Keep exhibition content and image paths in `src/data/site.ts` and `src/data/women.ts` as the single source of truth rendered by `/`, `/galeria`, and `/mulheres/$slug`, so profile sections and photographs stay consistent across routes.
+- Serve exhibition photographs from source-controlled `public/images/`; retain pre-migration bytes in `archive/images/` and inactive asset pointers for recovery, so external hosts need no Lovable CDN.
+- Use the installed Nitro Netlify preset through `netlify.toml`, not a second Vite adapter or SPA fallback, so SSR stays compatible with the current plugin stack.

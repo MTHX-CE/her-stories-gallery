@@ -4,10 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { site } from "@/data/site";
 import { women, pad } from "@/data/women";
 import { cn } from "@/lib/utils";
-import groupPhoto from "@/assets/home/cinco-mulheres.jpg.asset.json";
-import filmPhoto from "@/assets/home/filme.jpg.asset.json";
-import posterPhoto from "@/assets/home/cartaz-grupo.jpg.asset.json";
-import doorPhoto from "@/assets/home/porta-isolada.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,7 +22,7 @@ export const Route = createFileRoute("/")({
 const blocks = [
   {
     title: "Sobre o filme",
-    src: filmPhoto.url,
+    src: site.images.film,
     alt: "Cartaz do filme Estrelas Além do Tempo",
     wrap: "",
     img: "w-full h-auto",
@@ -35,7 +31,7 @@ const blocks = [
   },
   {
     title: "Sobre o grupo",
-    src: posterPhoto.url,
+    src: site.images.poster,
     alt: "Cartaz oficial do grupo de teatro Mulheres Negras",
     wrap: "flex justify-center",
     img: "w-full max-w-[17rem] h-auto",
@@ -44,7 +40,7 @@ const blocks = [
   },
   {
     title: "Sobre a exposição",
-    src: doorPhoto.url,
+    src: site.images.door,
     alt: "Porta de madeira",
     wrap: "flex justify-center",
     img: "w-full max-w-[12rem] md:max-w-[14rem] h-auto",
@@ -63,7 +59,7 @@ function ExhibitImage({
   dark = false,
   loading,
 }: {
-  src: string;
+  src: string | null;
   alt: string;
   className?: string;
   fallbackClassName?: string;
@@ -82,7 +78,7 @@ function ExhibitImage({
     }
   }, [src]);
 
-  if (failed) {
+  if (!src || failed) {
     return (
       <div
         role="img"
@@ -120,7 +116,7 @@ function Index() {
           className="md:col-start-7 md:col-span-6"
         >
           <ExhibitImage
-            src={groupPhoto.url}
+            src={site.images.group}
             alt="Cinco mulheres negras sorrindo juntas"
             className="w-full h-auto"
             fallbackClassName="w-full aspect-[4/3]"

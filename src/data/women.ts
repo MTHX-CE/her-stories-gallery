@@ -1,9 +1,3 @@
-import rosana_paulino from "@/assets/portraits/rosana-paulino.jpg.asset.json";
-import daiane_dos_santos from "@/assets/portraits/daiane-dos-santos.jpg.asset.json";
-import rebeca_andrade from "@/assets/portraits/rebeca-andrade.jpg.asset.json";
-import serena_williams from "@/assets/portraits/serena-williams.jpg.asset.json";
-import marielle_franco from "@/assets/portraits/marielle-franco.jpg.asset.json";
-
 /**
  * Fonte única de conteúdo da exposição.
  * Preencha os campos opcionais quando o conteúdo curado estiver disponível;
@@ -34,7 +28,7 @@ export const womenById: Record<string, Woman> = {
     id: "rosana-paulino",
     slug: "rosana-paulino",
     name: "Rosana Paulino",
-    portrait: { src: rosana_paulino.url, alt: "Retrato de Rosana Paulino" },
+    portrait: { src: "/images/portraits/rosana-paulino.jpg", alt: "Retrato de Rosana Paulino" },
     area: "Artes visuais",
     biography: [
       "Rosana Paulino nasceu em São Paulo, em 1967. É artista visual, pesquisadora e educadora, com formação em Gravura e doutorado em Poéticas Visuais pela Escola de Comunicações e Artes da Universidade de São Paulo (ECA-USP).",
@@ -54,7 +48,7 @@ export const womenById: Record<string, Woman> = {
     id: "daiane-dos-santos",
     slug: "daiane-dos-santos",
     name: "Daiane dos Santos",
-    portrait: { src: daiane_dos_santos.url, alt: "Retrato de Daiane dos Santos" },
+    portrait: { src: "/images/portraits/daiane-dos-santos.png", alt: "Retrato de Daiane dos Santos" },
     area: "Ginástica artística",
     biography: [
       "Daiane Garcia dos Santos nasceu em 10 de fevereiro de 1983, em Porto Alegre, Rio Grande do Sul. Começou na ginástica artística ainda criança, após ser descoberta aos 11 anos.",
@@ -74,7 +68,7 @@ export const womenById: Record<string, Woman> = {
     id: "rebeca-andrade",
     slug: "rebeca-andrade",
     name: "Rebeca Andrade",
-    portrait: { src: rebeca_andrade.url, alt: "Retrato de Rebeca Andrade" },
+    portrait: { src: "/images/portraits/rebeca-andrade.jpg", alt: "Retrato de Rebeca Andrade" },
     area: "Ginástica artística",
     biography: [
       "Rebeca Rodrigues de Andrade nasceu em 8 de maio de 1999, em Guarulhos, São Paulo. Começou na ginástica artística aos quatro anos, por meio de um projeto social.",
@@ -95,7 +89,7 @@ export const womenById: Record<string, Woman> = {
     id: "serena-williams",
     slug: "serena-williams",
     name: "Serena Williams",
-    portrait: { src: serena_williams.url, alt: "Retrato de Serena Williams" },
+    portrait: { src: "/images/portraits/serena-williams.jpg", alt: "Retrato de Serena Williams" },
     area: "Tênis",
     biography: [
       "Serena Williams é uma tenista norte-americana, nascida em 26 de setembro de 1981, em Saginaw, nos Estados Unidos. Cresceu em Compton, na Califórnia, onde treinou desde criança ao lado da irmã mais velha, Venus Williams, com o apoio da família.",
@@ -115,7 +109,7 @@ export const womenById: Record<string, Woman> = {
     id: "marielle-franco",
     slug: "marielle-franco",
     name: "Marielle Franco",
-    portrait: { src: marielle_franco.url, alt: "Retrato de Marielle Franco" },
+    portrait: { src: "/images/portraits/marielle-franco.jpg", alt: "Retrato de Marielle Franco" },
     area: "Política e direitos humanos",
     biography: [
       "Marielle Franco nasceu em 27 de julho de 1979, no Complexo da Maré, no Rio de Janeiro. Socióloga e política brasileira, formou-se em Ciências Sociais pela PUC-Rio e concluiu o mestrado em Administração Pública pela Universidade Federal Fluminense (UFF).",
