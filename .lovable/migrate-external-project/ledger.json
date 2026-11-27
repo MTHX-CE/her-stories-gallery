@@ -39,10 +39,10 @@
     },
     {
       "capability": "uploaded_file_bytes",
-      "source": "10 .asset.json metadata pointers in src/assets/ (9 referenced: 4 home photos, 5 portraits; 1 unused porta.jpg) pointing to project 920fd520-b105-4b9e-8024-1efe9d104874 without binary files",
+      "source": "10 .asset.json metadata pointers in src/assets/ (9 referenced: 4 home photos, 5 portraits; 1 unused porta.jpg). 7 now re-hosted in this project (filme, porta-isolada, 5 portraits); 3 still point to project 920fd520-b105-4b9e-8024-1efe9d104874 (cinco-mulheres, cartaz-grupo, unused porta)",
       "outcome": "migrate",
-      "status": "pending",
-      "next_action": "Preserve .asset.json metadata pointers with graceful UI fallbacks and request the 9 original JPEG image files from the user to upload to this project."
+      "status": "partial",
+      "next_action": "Request the 2 remaining home JPEGs (cinco-mulheres.jpg, cartaz-grupo.jpg) from the user; the unused porta.jpg pointer can be dropped."
     },
     {
       "capability": "external_providers",

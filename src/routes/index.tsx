@@ -27,10 +27,10 @@ const blocks = [
   {
     title: "Sobre o filme",
     src: filmPhoto.url,
-    alt: "Cena do filme",
+    alt: "Cartaz do filme Estrelas Além do Tempo",
     wrap: "",
-    img: "w-full h-auto aspect-[3/2] object-cover",
-    fallback: "w-full aspect-[3/2]",
+    img: "w-full h-auto",
+    fallback: "w-full aspect-[16/9]",
     text: site.film.description,
   },
   {
@@ -47,8 +47,8 @@ const blocks = [
     src: doorPhoto.url,
     alt: "Porta de madeira",
     wrap: "flex justify-center",
-    img: "w-full max-w-[8rem] md:max-w-[10rem] h-auto",
-    fallback: "w-full max-w-[10rem] aspect-[2/3]",
+    img: "w-full max-w-[12rem] md:max-w-[14rem] h-auto",
+    fallback: "w-full max-w-[14rem] aspect-[1/2]",
     text: site.exhibition.description,
   },
 ];
