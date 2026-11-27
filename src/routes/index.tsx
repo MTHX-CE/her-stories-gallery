@@ -49,7 +49,7 @@ const blocks = [
     wrap: "flex justify-center",
     img: "w-full max-w-[8rem] md:max-w-[10rem] h-auto",
     fallback: "w-full max-w-[10rem] aspect-[2/3]",
-    text: site.exhibition.description,
+    text: undefined as string[] | undefined,
   },
 ];
 
