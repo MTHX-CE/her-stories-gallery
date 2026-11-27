@@ -22,3 +22,13 @@ describe("descrição do grupo", () => {
     expect(site.group.description[1]).toContain("respeito, da igualdade e da representatividade");
   });
 });
+
+describe("descrição da exposição", () => {
+  it("traz o texto completo, na ordem ditada", () => {
+    expect(site.exhibition.description).toHaveLength(2);
+    expect(site.exhibition.description[0]).toContain("cinco trajetórias marcantes");
+    expect(site.exhibition.description[1]).toContain("Cada grupo apresenta uma personalidade em cinco seções");
+    expect(site.exhibition.description[1]).toContain("biografia, principais conquistas, contribuições e impacto, cordel e galeria");
+    expect(site.exhibition.description[1]).toContain("escolher a personalidade que deseja ver");
+  });
+});
